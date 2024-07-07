@@ -14,7 +14,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        Violet: 'hsl(27, 22%, 51%)',
+        Violet: 'hsl(235, 69%, 61%)',
         Lightviolet: 'hsl(235, 82%, 77%)',
         VeryDarkBlue: 'hsl(219, 29%, 14%)',
         Midnight: 'hsl(220, 29%, 10%)',
