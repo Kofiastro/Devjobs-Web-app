@@ -94,7 +94,7 @@ export default function Home() {
             <h1 className='font-bold text-VeryDarkBlue pl-[16px]'>
               Full Time Only
             </h1>
-            <button className='bg-Violet w-[123px] h-[48px] rounded-lg ml-[26px] '>
+            <button className='bg-Violet hover:bg-Lightviolet w-[123px] h-[48px] rounded-lg ml-[26px] '>
               <h1 className='text-White font-semibold'>Search</h1>
             </button>
           </div>
