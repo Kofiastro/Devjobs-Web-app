@@ -69,7 +69,7 @@ export default function Home() {
             />
             <input
               type='text'
-              className=' text-Grey ring-0 rounded-lg focus:ring-0 focus:outline-none focus:border-none w-[271px]  '
+              className=' text-VeryDarkBlue placeholder:text-Grey ring-0 rounded-lg focus:ring-0 focus:outline-none focus:border-none w-[271px]  '
               placeholder='Filter by title, companies, expertise…' 
             />
           </div>
@@ -84,7 +84,7 @@ export default function Home() {
             />
             <input
               type='text'
-              className=' text-Grey ring-0 rounded-lg focus:ring-0 focus:outline-none focus:border-none'
+              className=' text-VeryDarkBlue placeholder:text-Grey ring-0 rounded-lg focus:ring-0 focus:outline-none focus:border-none'
               placeholder='Filter by location'
             />
           </div>
@@ -102,7 +102,7 @@ export default function Home() {
           {/* input for small screens */}
           <input
             type='text'
-            className='pl-[24px] text-Grey ring-0 rounded-lg focus:ring-0 focus:outline-none focus:border-none md:hidden '
+            className='pl-[24px] text-VeryDarkBlue placeholder:text-Grey ring-0 rounded-lg focus:ring-0 focus:outline-none focus:border-none md:hidden '
             placeholder='Filter by title…'
           />
           {/* search and filter BUtton on small screens*/}
