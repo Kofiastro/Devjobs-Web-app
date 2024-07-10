@@ -70,12 +70,12 @@ export default function Home() {
             />
             <input
               type='text'
-              className=' text-VeryDarkBlue  placeholder:text-Gr ring-0 rounded-lg focus:ring-0 focus:outline-none focus:border-none hidden lg:block lg:w-[271px]  '
+              className='  text-VeryDarkBlue placeholder:text-md p  ring-0 rounded-lg focus:ring-0 focus:outline-none focus:border-none hidden lg:block lg:w-[312px] '
               placeholder='Filter by title, companies, expertise…' 
             />
              <input
               type='text'
-              className=' text-VeryDarkBlue  placeholder:text-Gr ring-0 rounded-lg focus:ring-0 focus:outline-none focus:border-none sm:hidden md:block lg:hidden'
+              className=' text-VeryDarkBlue  placeholder:text-md ring-0 rounded-lg focus:ring-0 focus:outline-none focus:border-none sm:hidden md:block lg:hidden'
               placeholder='Filter by title...' 
             />
           </div>
@@ -103,7 +103,7 @@ export default function Home() {
             <h1 className='font-bold text-VeryDarkBlue pl-[16px] block lg:hidden'>
               Full Time
             </h1>
-            <button className='bg-Violet hover:bg-Lightviolet md:w-[80px] md:h-[48px] lg:w-[123px] lg:h-[48px] rounded-lg ml-[26px] '>
+            <button className='bg-Violet hover:bg-Lightviolet md:w-[80px] md:h-[48px] rounded-lg ml-[26px] '>
               <h1 className='text-White font-semibold'>Search</h1>
             </button>
           </div>
@@ -128,12 +128,14 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section >
-      <section className=' mx-[24px] lg:mx-[165px] md:mx-[39px] mt-[80px] h-dvh'>
-      {/* Card section */}
+          {/* Card section */}
+        <div className=' mx-[24px] lg:mx-[165px] md:mx-[39px] py-[80px] '>
+    
       <JobCards/>
   
-      </section>
+      </div>
+      </section >
+      
      
     </main>
   );
