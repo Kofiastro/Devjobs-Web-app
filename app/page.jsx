@@ -1,26 +1,27 @@
 import Image from 'next/image';
+import JobCards from './ui/jobcards';
 
 export default function Home() {
   return (
-    <main className='bg-LightGray h-dvh'>
+    <main className='bg-LightGray overflow-x-clip '>
       {/* header Section*/}
       <section>
         <Image
           fill
           src={'/desktop/bg-pattern-header.svg'}
-          className='hidden  absolute object-contain object-top lg:block '
+          className='hidden  object-contain object-top lg:block '
         />
         <Image
           fill
           src={'/tablet/bg-pattern-header.svg'}
-          className='hidden absolute object-contain object-top md:block lg:hidden '
+          className='hidden  object-contain object-top md:block lg:hidden '
         />
         <Image
           fill
           src={'/mobile/bg-pattern-header.svg'}
-          className='block absolute object-contain object-top md:hidden '
+          className='block object-contain object-top md:hidden '
         />
-        <div className='relative flex flex-row justify-between pt-[32px] pb-[72px] px-[24px] md:px-[40px]  md:pt-[45px] md:pb-[85px] lg:px-[165px]'>
+        <div className='relative flex flex-row justify-between  pt-[32px] pb-[72px] px-[24px] md:px-[40px]  md:pt-[45px] md:pb-[85px] lg:px-[165px]'>
           <div>
             <Image
               src={'/desktop/logo.svg'}
@@ -56,7 +57,7 @@ export default function Home() {
           </div>
         </div>
         {/* FIlter section and search */}
-        <div className=' relative  flex justify-between mx-[24px] bg-White rounded-lg h-[80px] -mt-9 md:pl-[32px] md:pr-[16px] md:-mt-2 md:mx-[39px] lg:-mt-8 lg:mx-[165px] md:divide-x-2 '>
+        <div className=' relative  flex justify-between mx-[24px] bg-White rounded-lg  h-[80px] -mt-9 md:pl-[32px] md:pr-[16px] md:-mt-2 md:mx-[39px] lg:-mt-8 lg:mx-[165px] md:divide-x-2 '>
           {/* FIlter and search  section for medium and large screens */}
           <div className='hidden md:flex flex-row justify-center items-center'>
             {/* input large screens*/}
@@ -69,8 +70,13 @@ export default function Home() {
             />
             <input
               type='text'
-              className=' text-VeryDarkBlue placeholder:text-Grey ring-0 rounded-lg focus:ring-0 focus:outline-none focus:border-none w-[271px]  '
+              className=' text-VeryDarkBlue  placeholder:text-Gr ring-0 rounded-lg focus:ring-0 focus:outline-none focus:border-none hidden lg:block lg:w-[271px]  '
               placeholder='Filter by title, companies, expertise…' 
+            />
+             <input
+              type='text'
+              className=' text-VeryDarkBlue  placeholder:text-Gr ring-0 rounded-lg focus:ring-0 focus:outline-none focus:border-none sm:hidden md:block lg:hidden'
+              placeholder='Filter by title...' 
             />
           </div>
           {/* Filter by location */}
@@ -84,17 +90,20 @@ export default function Home() {
             />
             <input
               type='text'
-              className=' text-VeryDarkBlue placeholder:text-Grey ring-0 rounded-lg focus:ring-0 focus:outline-none focus:border-none'
+              className=' text-VeryDarkBlue placeholder:text-Gr ring-0 rounded-lg focus:ring-0 focus:outline-none focus:border-none'
               placeholder='Filter by location'
             />
           </div>
           {/* jobs category */}
           <div className='hidden md:flex flex-row justify-center items-center pl-[32px]'>
             <input type='checkbox' className='form-chekbox  bg-Grey h-[24px] w-[24px] accent-Violet  ' />
-            <h1 className='font-bold text-VeryDarkBlue pl-[16px]'>
+            <h1 className='font-bold text-VeryDarkBlue pl-[16px] hidden lg:block'>
               Full Time Only
             </h1>
-            <button className='bg-Violet hover:bg-Lightviolet w-[123px] h-[48px] rounded-lg ml-[26px] '>
+            <h1 className='font-bold text-VeryDarkBlue pl-[16px] block lg:hidden'>
+              Full Time
+            </h1>
+            <button className='bg-Violet hover:bg-Lightviolet md:w-[80px] md:h-[48px] lg:w-[123px] lg:h-[48px] rounded-lg ml-[26px] '>
               <h1 className='text-White font-semibold'>Search</h1>
             </button>
           </div>
@@ -102,14 +111,14 @@ export default function Home() {
           {/* input for small screens */}
           <input
             type='text'
-            className='pl-[24px] text-VeryDarkBlue placeholder:text-Grey ring-0 rounded-lg focus:ring-0 focus:outline-none focus:border-none md:hidden '
+            className='pl-[24px] text-VeryDarkBlue placeholder:text-Gr ring-0 rounded-lg focus:ring-0 focus:outline-none focus:border-none md:hidden '
             placeholder='Filter by title…'
           />
           {/* search and filter BUtton on small screens*/}
           <div className=' relative flex justify-center items-center space-x-[24.03px] mx-auto mr-[16px] md:hidden '>
             <Image src={'/mobile/icon-filter.svg'} width={19.97} height={20} />
 
-            <div className=' h-[48px] w-[48px]  flex items-center justify-center rounded-lg bg-Violet '>
+            <div className='h-[48px] w-[48px] flex items-center justify-center rounded-lg bg-Violet '>
               <Image
                 src={'/mobile/icon-search.svg'}
                 width={19.95}
@@ -119,7 +128,13 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section >
+      <section className=' mx-[24px] lg:mx-[165px] md:mx-[39px] mt-[80px] h-dvh'>
+      {/* Card section */}
+      <JobCards/>
+  
       </section>
+     
     </main>
   );
 }
