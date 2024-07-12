@@ -71,12 +71,12 @@ export default function Home() {
             <input
               type='text'
               className='  text-VeryDarkBlue placeholder:text-md p  ring-0 rounded-lg focus:ring-0 focus:outline-none focus:border-none hidden lg:block lg:w-[312px] '
-              placeholder='Filter by title, companies, expertise…' 
+              placeholder='Filter by title, companies, expertise…'
             />
-             <input
+            <input
               type='text'
               className=' text-VeryDarkBlue  placeholder:text-md ring-0 rounded-lg focus:ring-0 focus:outline-none focus:border-none sm:hidden md:block lg:hidden'
-              placeholder='Filter by title...' 
+              placeholder='Filter by title...'
             />
           </div>
           {/* Filter by location */}
@@ -96,7 +96,10 @@ export default function Home() {
           </div>
           {/* jobs category */}
           <div className='hidden md:flex flex-row justify-center items-center pl-[32px]'>
-            <input type='checkbox' className='form-chekbox  bg-Grey h-[24px] w-[24px] accent-Violet  ' />
+            <input
+              type='checkbox'
+              className='form-chekbox  bg-Grey h-[24px] w-[24px] accent-Violet  '
+            />
             <h1 className='font-bold text-VeryDarkBlue pl-[16px] hidden lg:block'>
               Full Time Only
             </h1>
@@ -128,15 +131,14 @@ export default function Home() {
             </div>
           </div>
         </div>
-          {/* Card section */}
-        <div className=' mx-[24px] lg:mx-[165px] md:mx-[39px] py-[80px] '>
-    
-      <JobCards/>
-  
-      </div>
-      </section >
-      
-     
+        {/* Card section */}
+        <div className=' mx-[24px] lg:mx-[165px] md:mx-[39px] pt-[80px] '>
+          <JobCards />
+        </div>
+        <div className="mx-auto flex py-[56px] md:py-0 ] md:pb-[104px] md:pt-[56px]">
+          <button className="text-White font-semibold bg-Violet rounded-md h-[48px] w-[141px] mx-auto">Load More</button>
+        </div>
+      </section>
     </main>
   );
 }
