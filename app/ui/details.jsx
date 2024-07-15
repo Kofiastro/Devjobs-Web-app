@@ -1,9 +1,9 @@
 import Image from 'next/image';
 export default function Details() {
   return (
-    <div className='  relative mx-[24px] md:mx-[40px] lg:mx-auto max-w-3xl flex justify-center items-center '>
+    <div className='  relative mx-[24px] md:mx-[40px] lg:mx-auto max-w-3xl flex-col justify-center items-center '>
       {/* job card details */}
-      <div className='relative bg-White w-full mx-auto flex rounded-lg  md:rounded-none md:rounded-br-lg flex-col md:flex-row items-center md:justify-between  md:space-y-0 '>
+      <div className='relative bg-White w-full mx-auto flex rounded-lg  md:rounded-none md:rounded-br-lg flex-col md:flex-row items-center md:justify-between -mt-6 md:space-y-0 '>
         <Image
           src={'/logos/scoot.svg'}
           width={140}
@@ -28,6 +28,13 @@ export default function Details() {
             </button>
           </div>
         </div>
+      </div>
+        {/* job Details */}
+        <div className='relative bg-White w-full p-[48px] mt-[32px]'>
+            <div className=''>
+
+            </div>
+
       </div>
     </div>
   );
