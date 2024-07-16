@@ -115,7 +115,7 @@ export default function Details() {
             pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu,
             fermentum et, dapibus sed, urna.
           </h1>
-          <ul className='list-decimal font-md text-DarkGrey antialiased space-y-[8px] list-inside marker:text-Violet marker:font-bold '>
+          <ul className='list-decimal font-md text-DarkGrey antialiased space-y-[8px] list-inside  marker:text-Violet marker:font-bold  '>
             <li> Morbi interdum mollis sapien. Sed</li>
             <li>
               Phasellus lacinia magna a ullamcorper laoreet, lectus arcu
